@@ -4,7 +4,9 @@ task :generate do
   system "middleman build --clean"
   cd "build" do
     system "git init"
-    system "git remote add origin "
+    system "git remote add origin https://github.com/microwavemusic/microwavemusic.github.io.git"
+    system "git config user.name 'microwavemusic'"
+    system "git config user.email 'info@microwavemusic.net'"
   end
 end
 
@@ -12,7 +14,7 @@ desc "Push the build to GitHub"
 task :push do
   puts "## Deploying build to GitHub"
   cd "build" do
-    system "git add -u ."
+    system "git add -A"
     system "git commit -m \"Site updated at #{Time.now.utc}\""
     system "git push origin master --force"
   end
