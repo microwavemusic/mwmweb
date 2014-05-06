@@ -1,0 +1,7 @@
+- wrap_layout :layout do
+  main
+    h1 log
+    article
+      h1 = link_to current_article.data.title, current_article.data.url
+      time = current_article.date.strftime("%b %e %Y")
+      == yield

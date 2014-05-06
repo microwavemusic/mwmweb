@@ -1,0 +1,12 @@
+---
+title: log
+description: news and other stuff
+---
+
+main
+  h1 log
+  - blog.articles.each do |article|
+    article
+      h1 = link_to article.title, article.url
+      time = article.date.strftime("%b %e %Y")
+      p = article.summary

@@ -1,0 +1,9 @@
+- name:
+  id:
+  artist:
+  title:
+  year:
+  tracks:
+    - name:
+      artist:
+      title:

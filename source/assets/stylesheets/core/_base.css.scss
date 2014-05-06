@@ -1,0 +1,41 @@
+// *************************************
+//
+//   Base
+//
+// *************************************
+
+body {
+  background: $base-background;
+  color: $base-color;
+  font-family: $base-fontFamily;
+  font-size: $base-fontSize;
+  margin: $base-whitespace;
+}
+
+// -------------------------------------
+//   Block Content
+// -------------------------------------
+
+p {
+}
+
+// -------------------------------------
+//   Inline Content
+// -------------------------------------
+
+a {
+  @include transition-property(opacity);
+  @include transition-duration(100ms);
+  @include transition-timing-function(linear);
+
+  color: $base-link-color;
+  text-decoration: underline;
+
+  &:hover, &:focus {
+    opacity: 0.6;
+  }
+}
+
+img {
+  max-width: 100%;
+}

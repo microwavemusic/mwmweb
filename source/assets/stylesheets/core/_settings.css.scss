@@ -1,0 +1,43 @@
+// *************************************
+//
+//   Settings
+//
+// *************************************
+
+// -------------------------------------
+//   Variables
+// -------------------------------------
+
+// ----- Base Colors ----- //
+
+$base-background: #ffffff;
+$base-color: #000000;
+$base-link-color: $base-color;
+
+// ----- Base Borders & Box Shadows ----- //
+
+$base-border: 1px solid $base-color;
+
+// ----- Base Content ----- //
+
+$base-fontFamily: monospace;
+$base-fontSize: 100%;
+
+// ----- Base Layout ----- //
+
+$base-whitespace: 2%;
+$base-bottom-space: ($base-whitespace * 2);
+
+// ----- Content ----- //
+
+// Articles
+$c-article-maxWidth: 800px;
+
+// Headers
+$c-header-fontFamily: $base-fontFamily;
+$c-header-h1-fontSize: ($base-fontSize * 2.0);
+$c-header-h2-fontSize: ($base-fontSize * 1.8);
+$c-header-h3-fontSize: ($base-fontSize * 1.6);
+$c-header-h4-fontSize: ($base-fontSize * 1.4);
+$c-header-h5-fontSize: ($base-fontSize * 1.2);
+$c-header-h6-fontSize: ($base-fontSize * 1.0);
