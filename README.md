@@ -1,4 +1,4 @@
 mwmweb
 ======
 
-micro wave music website source
+Micro Wave Music website source
