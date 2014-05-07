@@ -5,7 +5,7 @@
 // *************************************
 
 // -------------------------------------
-//   Variables
+//   Base Variables
 // -------------------------------------
 
 // ----- Base Colors ----- //
@@ -20,18 +20,24 @@ $base-border: 1px solid $base-color;
 
 // ----- Base Content ----- //
 
-$base-fontFamily: monospace;
+$base-fontFamily: sans-serif;
 $base-fontSize: 100%;
 
 // ----- Base Layout ----- //
 
-$base-whitespace: 2%;
-$base-bottom-space: ($base-whitespace * 2);
+$base-maxWidth: 1000px;
+$base-space: 0.6em;
 
-// ----- Content ----- //
+$base-margin: $base-space;
+$base-margin-bottom: ($base-margin* 2);
+$base-margin-left: ($base-margin * 2);
+$base-padding: $base-space;
+$base-padding-left: $base-padding;
+$base-padding-right: $base-padding;
 
-// Articles
-$c-article-maxWidth: 800px;
+// -------------------------------------
+//   Content Variables
+// -------------------------------------
 
 // Headers
 $c-header-fontFamily: $base-fontFamily;
@@ -41,3 +47,23 @@ $c-header-h3-fontSize: ($base-fontSize * 1.6);
 $c-header-h4-fontSize: ($base-fontSize * 1.4);
 $c-header-h5-fontSize: ($base-fontSize * 1.2);
 $c-header-h6-fontSize: ($base-fontSize * 1.0);
+
+// -------------------------------------
+//   Layout Variables
+// -------------------------------------
+
+// Articles
+$l-article-maxWidth: $base-maxWidth;
+$l-article-margin-bottom: $base-margin-bottom;
+
+// Headers
+$l-header-margin-bottom: $base-margin-bottom;
+
+// Main Elements
+$l-header-margin-bottom: $base-margin-bottom;
+$l-main-margin-bottom: ($base-margin-bottom * 2);
+$l-main-margin-left: $base-margin-left;
+$l-main-maxWidth: $base-maxWidth;
+
+// Paragraphs
+$l-paragraph-margin-bottom: ($base-margin-bottom / 2);

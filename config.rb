@@ -55,6 +55,10 @@ activate :livereload
 # Pretty URLs
 activate :directory_indexes
 
+# Relative URLs
+set :relative_links, true
+activate :relative_assets
+
 # Methods defined in the helpers block are available in templates
 # helpers do
 #   def some_helper

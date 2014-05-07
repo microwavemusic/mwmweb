@@ -5,5 +5,9 @@
 // *************************************
 
 main {
-  margin-bottom: $base-bottom-space;
+  margin-left: $l-main-margin-left;
+  margin-right: auto;
+  max-width: $l-main-maxWidth;
+  padding-left: $base-padding-left;
+  padding-right: $base-padding-right;
 }
